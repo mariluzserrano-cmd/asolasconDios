@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Introducción · Criar como Jesús · A solas con Dios</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..700;1,9..144,400..600&family=Karla:ital,wght@0,400..700;1,400..600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --crema:#F8F2E4;
+  --crema-2:#F1E7D3;
+  --beige:#E4D5BC;
+  --olivo:#6B7A52;
+  --olivo-osc:#4E5B3B;
+  --dorado:#C9A344;
+  --marron:#3F3227;
+  --marron-suave:#6B5A48;
+  --vino:#7B2D3B;
+  --linea:rgba(63,50,39,.16);
+}
+*{box-sizing:border-box}
+body{
+  margin:0;padding:0;
+  background:var(--crema);
+  color:var(--marron);
+  font-family:'Karla',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+  font-size:17px;line-height:1.72;
+  -webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:720px;margin:0 auto;padding:0 22px 72px}
+img{max-width:100%;height:auto;display:block}
+
+/* ---------- Encabezado ---------- */
+.hero{padding:56px 0 30px;text-align:center;position:relative}
+.serie{
+  font-size:11.5px;letter-spacing:.34em;text-transform:uppercase;
+  color:var(--olivo);font-weight:700;margin:0 0 22px
+}
+.contador{
+  display:inline-flex;align-items:baseline;gap:7px;
+  font-family:'Fraunces',Georgia,serif;
+  color:var(--vino);margin-bottom:14px
+}
+.contador .n{font-size:46px;font-weight:600;line-height:1;font-variation-settings:'SOFT' 60}
+.contador .de{font-size:15px;letter-spacing:.16em;color:var(--marron-suave);text-transform:uppercase}
+h1{
+  font-family:'Fraunces',Georgia,serif;
+  font-weight:600;font-size:clamp(30px,6.4vw,44px);
+  line-height:1.14;margin:6px 0 16px;color:var(--marron);
+  font-variation-settings:'SOFT' 40,'WONK' 1
+}
+.fecha{
+  font-size:12.5px;letter-spacing:.22em;text-transform:uppercase;
+  color:var(--marron-suave);margin:0
+}
+.imagen-dia{
+  margin:34px 0 0;border-radius:3px;
+  border:1px solid var(--linea);
+  box-shadow:0 14px 34px rgba(63,50,39,.10)
+}
+.pie-img{
+  font-size:12.5px;color:var(--marron-suave);text-align:center;
+  margin:10px 0 0;font-style:italic
+}
+
+/* ---------- Secciones ---------- */
+.seccion{margin:46px 0 0}
+.rotulo{
+  display:flex;align-items:center;gap:12px;
+  font-size:11.5px;letter-spacing:.26em;text-transform:uppercase;
+  color:var(--olivo);font-weight:700;margin:0 0 16px
+}
+.rotulo::after{content:"";flex:1;height:1px;background:var(--linea)}
+h2{
+  font-family:'Fraunces',Georgia,serif;font-weight:600;
+  font-size:25px;line-height:1.24;margin:0 0 14px;color:var(--marron)
+}
+h3{
+  font-family:'Fraunces',Georgia,serif;font-weight:600;
+  font-size:19px;line-height:1.3;margin:26px 0 8px;color:var(--olivo-osc)
+}
+p{margin:0 0 16px}
+
+/* ---------- Audio ---------- */
+.audio{
+  background:var(--crema-2);border:1px solid var(--linea);
+  border-radius:4px;padding:22px 22px 18px;margin:34px 0 0;text-align:center
+}
+.audio .et{
+  font-size:11.5px;letter-spacing:.24em;text-transform:uppercase;
+  color:var(--olivo);font-weight:700;margin:0 0 4px
+}
+.audio .sub{font-size:14px;color:var(--marron-suave);margin:0 0 16px}
+.audio iframe{width:100%;max-width:340px;height:60px;border:0;margin:0 auto}
+.audio .voz{
+  font-family:'Fraunces',Georgia,serif;font-size:15px;
+  color:var(--marron);margin:14px 0 0;letter-spacing:.01em
+}
+.audio a{
+  display:inline-block;margin-top:10px;font-size:12.5px;
+  color:var(--marron-suave);text-decoration:none;border-bottom:1px solid var(--linea)
+}
+
+/* ---------- Biblia en dos tiempos (elemento firma) ---------- */
+.dos-tiempos{position:relative;padding-left:30px;margin-top:8px}
+.dos-tiempos::before{
+  content:"";position:absolute;left:6px;top:14px;bottom:14px;width:2px;
+  background:linear-gradient(to bottom,var(--beige),var(--dorado),var(--olivo))
+}
+.tiempo{position:relative;margin-bottom:22px}
+.tiempo:last-child{margin-bottom:0}
+.tiempo::before{
+  content:"";position:absolute;left:-30px;top:9px;
+  width:14px;height:14px;border-radius:50%;
+  background:var(--crema);border:2px solid var(--dorado)
+}
+.tiempo.nt::before{background:var(--olivo);border-color:var(--olivo)}
+.tiempo .testamento{
+  font-size:11px;letter-spacing:.22em;text-transform:uppercase;
+  color:var(--marron-suave);font-weight:700;margin:0 0 3px
+}
+.tiempo .cita{
+  font-family:'Fraunces',Georgia,serif;font-size:20px;
+  color:var(--vino);margin:0 0 8px;font-weight:600
+}
+.autora{float:right;width:200px;margin:0 0 18px 24px}
+.autora img{border-radius:3px;border:1px solid var(--linea)}
+.autora .cap{
+  font-size:12px;letter-spacing:.1em;text-transform:uppercase;
+  color:var(--marron-suave);text-align:center;margin:8px 0 0
+}
+@media (max-width:600px){.autora{float:none;width:100%;max-width:280px;margin:0 auto 22px}}
+.pestanas{display:flex;gap:6px;margin:0 0 10px}
+.pest{
+  font-family:'Karla',sans-serif;font-size:11.5px;letter-spacing:.14em;
+  text-transform:uppercase;font-weight:700;cursor:pointer;
+  background:transparent;color:var(--marron-suave);
+  border:1px solid var(--linea);border-radius:2px;padding:6px 12px
+}
+.pest.activa{background:var(--olivo);color:var(--crema);border-color:var(--olivo)}
+.panel{display:none}
+.panel.activo{display:block}
+.por-pegar{color:var(--marron-suave);font-style:italic}
+.texto-biblico{
+  background:#fff;border:1px solid var(--linea);border-left:3px solid var(--dorado);
+  padding:16px 18px;margin:0 0 10px;border-radius:2px
+}
+.tiempo.nt .autora{float:right;width:200px;margin:0 0 18px 24px}
+.autora img{border-radius:3px;border:1px solid var(--linea)}
+.autora .cap{
+  font-size:12px;letter-spacing:.1em;text-transform:uppercase;
+  color:var(--marron-suave);text-align:center;margin:8px 0 0
+}
+@media (max-width:600px){.autora{float:none;width:100%;max-width:280px;margin:0 auto 22px}}
+.pestanas{display:flex;gap:6px;margin:0 0 10px}
+.pest{
+  font-family:'Karla',sans-serif;font-size:11.5px;letter-spacing:.14em;
+  text-transform:uppercase;font-weight:700;cursor:pointer;
+  background:transparent;color:var(--marron-suave);
+  border:1px solid var(--linea);border-radius:2px;padding:6px 12px
+}
+.pest.activa{background:var(--olivo);color:var(--crema);border-color:var(--olivo)}
+.panel{display:none}
+.panel.activo{display:block}
+.por-pegar{color:var(--marron-suave);font-style:italic}
+.texto-biblico{border-left-color:var(--olivo)}
+.texto-biblico p{margin:0;font-family:'Fraunces',Georgia,serif;font-size:17.5px;line-height:1.62}
+.texto-biblico .fuente{
+  display:block;margin-top:10px;font-family:'Karla',sans-serif;
+  font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--marron-suave)
+}
+.eco{
+  font-size:15px;font-style:italic;color:var(--marron-suave);
+  margin:0 0 10px;line-height:1.6
+}
+.enlace-ntv{
+  display:inline-block;font-size:12.5px;color:var(--olivo-osc);
+  text-decoration:none;border-bottom:1px solid var(--olivo);padding-bottom:1px
+}
+
+/* ---------- Herramienta ---------- */
+.herramienta{
+  background:var(--crema-2);border:1px solid var(--beige);
+  border-radius:4px;padding:26px 24px;margin-top:8px
+}
+.herramienta .nombre{
+  font-family:'Fraunces',Georgia,serif;font-size:21px;color:var(--olivo-osc);
+  margin:0 0 14px;font-weight:600
+}
+ol.pasos{margin:0;padding:0;list-style:none;counter-reset:p}
+ol.pasos li{
+  counter-increment:p;position:relative;padding-left:38px;margin-bottom:13px
+}
+ol.pasos li:last-child{margin-bottom:0}
+ol.pasos li::before{
+  content:counter(p);position:absolute;left:0;top:1px;
+  width:25px;height:25px;border-radius:50%;
+  background:var(--olivo);color:var(--crema);
+  font-size:12.5px;font-weight:700;
+  display:flex;align-items:center;justify-content:center
+}
+ul.simple{margin:0;padding-left:20px}
+ul.simple li{margin-bottom:9px}
+
+/* ---------- Semilla ---------- */
+.semilla{
+  margin:46px 0 0;text-align:center;padding:38px 26px;
+  background:var(--olivo-osc);color:var(--crema);border-radius:4px
+}
+.semilla svg{margin:0 auto 16px}
+.logo-semilla{
+  width:132px;margin:0 auto 18px;
+  background:var(--crema);border-radius:50%;padding:12px 14px
+}
+.semilla .et{
+  font-size:11px;letter-spacing:.28em;text-transform:uppercase;
+  color:var(--dorado);font-weight:700;margin:0 0 14px
+}
+.semilla blockquote{
+  margin:0;font-family:'Fraunces',Georgia,serif;font-style:italic;
+  font-size:clamp(21px,4.6vw,27px);line-height:1.34;font-weight:500
+}
+.semilla .firma{
+  font-family:'Karla',sans-serif;font-style:normal;font-size:12px;
+  letter-spacing:.16em;text-transform:uppercase;color:rgba(248,242,228,.66);
+  margin:18px 0 0
+}
+
+/* ---------- Bloques suaves ---------- */
+.nota{
+  border-left:3px solid var(--beige);padding:4px 0 4px 20px;margin-top:8px
+}
+.oracion{
+  background:#fff;border:1px solid var(--linea);border-radius:4px;
+  padding:26px 24px;font-family:'Fraunces',Georgia,serif;
+  font-size:18px;line-height:1.66;color:var(--marron)
+}
+.oracion p{margin:0}
+
+/* ---------- Canción ---------- */
+.video{
+  position:relative;padding-bottom:56.25%;height:0;overflow:hidden;
+  border-radius:4px;border:1px solid var(--linea);background:#000
+}
+.video iframe{position:absolute;top:0;left:0;width:100%;height:100%;border:0}
+
+/* ---------- Tablas ---------- */
+.tabla{width:100%;border-collapse:collapse;font-size:15px;margin-top:8px}
+.tabla th,.tabla td{
+  text-align:left;padding:11px 12px;border-bottom:1px solid var(--linea);vertical-align:top
+}
+.tabla th{
+  font-size:11px;letter-spacing:.16em;text-transform:uppercase;
+  color:var(--olivo);font-weight:700;background:var(--crema-2)
+}
+.tabla td.dia{white-space:nowrap;font-weight:700;color:var(--vino)}
+.scroll{overflow-x:auto;-webkit-overflow-scrolling:touch}
+
+/* ---------- Cierre ---------- */
+.cierre{
+  margin:56px 0 0;padding:34px 26px;text-align:center;
+  border-top:1px solid var(--linea);border-bottom:1px solid var(--linea)
+}
+.cierre p{
+  font-family:'Fraunces',Georgia,serif;font-style:italic;
+  font-size:20px;line-height:1.5;margin:0;color:var(--marron)
+}
+.pie{
+  margin-top:34px;text-align:center;font-size:12.5px;
+  color:var(--marron-suave);line-height:1.9
+}
+.pie a{color:var(--olivo-osc);text-decoration:none;border-bottom:1px solid var(--linea)}
+.pie .nombre{
+  font-family:'Fraunces',Georgia,serif;font-size:16px;color:var(--marron);
+  font-style:normal;display:block;margin-bottom:4px
+}
+.nav{
+  display:flex;justify-content:center;gap:8px;flex-wrap:wrap;margin-top:26px
+}
+.nav span{
+  font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--marron-suave);border:1px solid var(--linea);
+  padding:5px 11px;border-radius:2px
+}
+.nav span.hoy{background:var(--olivo);color:var(--crema);border-color:var(--olivo)}
+
+@media (max-width:600px){
+  body{font-size:16.5px}
+  .wrap{padding:0 18px 56px}
+  .hero{padding:40px 0 22px}
+  .semilla{padding:30px 20px}
+  .herramienta{padding:22px 18px}
+}
+a:focus-visible,iframe:focus-visible{outline:2px solid var(--vino);outline-offset:3px}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="hero">
+    <p class="serie">A solas con Dios</p>
+    <h1>Criar como Jesús</h1>
+    <p class="fecha">7 herramientas para acompañar con amor, límites y fe<br>17 al 23 de agosto de 2026</p>
+
+    <!-- ► IMAGEN DE PORTADA -->
+    <img class="imagen-dia" src="ChatGPT_Image_Aug_15__2026__09_36_09_AM.png" alt="Portada de la serie Criar como Jesús: mesa de hogar con Biblia abierta, luz cálida y dos sillas.">
+    <p class="pie-img">Bienvenida a la serie</p>
+  </header>
+
+  <div class="audio">
+    <p class="et">Bienvenida en audio</p>
+    <p class="sub">Escúchame antes de comenzar la semana</p>
+    <iframe src="https://vocaroo.com/embed/11BnlKTn9Jgu?autoplay=0" frameborder="0" allow="autoplay" title="Reflexión en audio"></iframe>
+    <p class="voz">Dra. Mariluz Serrano Ortiz</p>
+  </div>
+
+  <section class="seccion">
+    <p class="rotulo">Bienvenida</p>
+    <p>Bienvenida, bienvenido. Me alegra muchísimo que estés aquí. Durante siete días vamos a caminar juntos por una pregunta sencilla y enorme al mismo tiempo: <strong>¿cómo puede la Biblia ayudarnos a acompañar a niñas, niños y adolescentes en la vida real?</strong> No en la vida ideal, no en la familia de las fotos: en la vida real, la de los días largos, los portazos, el cansancio y también la ternura.</p>
+    <p>Esta serie no ofrece fórmulas perfectas ni convierte la crianza en una lista de reglas. Lo que hace es mirar a Jesús —cómo amó, cómo corrigió, cómo escuchó, cómo sirvió, cómo confió— y traducir esa manera de estar con las personas en herramientas concretas para la familia.</p>
+  </section>
+
+  <section class="seccion">
+    <p class="rotulo">Quién te acompaña</p>
+    <div class="autora">
+      <img src="phot14.jpeg" alt="Dra. Mariluz Serrano Ortiz">
+      <p class="cap">Dra. Mariluz Serrano Ortiz</p>
+    </div>
+    <p>Soy la <strong>Dra. Mariluz Serrano Ortiz</strong>. Vengo del mundo de la educación y llevo años acompañando procesos de aprendizaje, pero este espacio nace de otro lugar: de la convicción de que el amor es un estilo de vida y de que la fe se practica, sobre todo, en casa.</p>
+    <p>Parte de este material se nutre de mi trabajo en <strong>Crianza Espiritual</strong> —conexión emocional, escucha activa, comunicación empática, autoestima, valores espirituales, presencia y gratitud—, adaptado al lenguaje de esta comunidad. Cada día vas a encontrar una <em>Semilla de crianza</em>: una frase corta para llevar contigo.</p>
+  </section>
+
+  <section class="seccion">
+    <p class="rotulo">La visión de la semana</p>
+    <h3>Una sola brújula</h3>
+    <p>Jesús es el modelo. La Escritura ilumina la práctica y la práctica vuelve visible el amor.</p>
+    <h3>Crianza sin vergüenza</h3>
+    <p>Se corrige la conducta sin etiquetar la identidad; se ponen límites sin humillar.</p>
+    <h3>Primero regulación, luego corrección</h3>
+    <p>El adulto modela el dominio propio que desea cultivar.</p>
+    <h3>La relación también se repara</h3>
+    <p>Pedir perdón, reconectar y volver a intentar forman parte de una familia saludable.</p>
+    <h3>No es solo para madres y padres</h3>
+    <p>Abuelas, tías, docentes, líderes, madrinas, padrinos y cualquier adulto significativo puede convertirse en presencia segura.</p>
+    <h3>Prácticas pequeñas</h3>
+    <p>Cada día termina con una acción realizable en menos de diez minutos.</p>
+    <div class="nota" style="margin-top:22px">
+      <p><strong>Principio rector:</strong> no buscamos criar hijos que “se vean bien” delante de otros; buscamos acompañar personas que aprendan a reconocer el amor, a desarrollar dominio propio y a caminar con Dios.</p>
+    </div>
+  </section>
+
+  <section class="semilla">
+    <img class="logo-semilla" src="El_Amor__un_estilo_de_vida_-_logo.png" alt="El amor, un estilo de vida">
+    <p class="et">Versículo de la semana</p>
+    <blockquote>“Y ustedes, padres, no hagan enojar a sus hijos, sino críenlos según la disciplina e instrucción del Señor.”</blockquote>
+    <p class="firma">Efesios 6:4</p>
+  </section>
+
+  <section class="seccion">
+    <p class="rotulo">Lo que encontrarás cada día</p>
+    <div class="scroll">
+    <table class="tabla">
+      <tr><th>Elemento</th><th>Función</th></tr>
+      <tr><td><strong>Tema del día</strong></td><td>Una herramienta concreta de crianza y acompañamiento.</td></tr>
+      <tr><td><strong>Biblia en dos tiempos</strong></td><td>Un eco breve del Antiguo Testamento y un texto focal del Nuevo Testamento.</td></tr>
+      <tr><td><strong>Reflexión en audio</strong></td><td>Entre 1:30 y 2:00 minutos: cálida, práctica, sin moralismo.</td></tr>
+      <tr><td><strong>Herramienta práctica</strong></td><td>Una estrategia de crianza respetuosa en lenguaje cotidiano.</td></tr>
+      <tr><td><strong>Semilla de crianza</strong></td><td>Una frase para recordar durante el día.</td></tr>
+      <tr><td><strong>Si no eres mamá o papá</strong></td><td>Cómo vivir el principio con un niño, adolescente o familia cercana.</td></tr>
+      <tr><td><strong>Oración breve</strong></td><td>Sabiduría, dominio propio y amor.</td></tr>
+      <tr><td><strong>Canción</strong></td><td>Una pieza en español para continuar la reflexión.</td></tr>
+    </table>
+    </div>
+  </section>
+
+  <section class="seccion">
+    <p class="rotulo">Mapa de los siete días</p>
+    <div class="scroll">
+    <table class="tabla">
+      <tr><th>Día</th><th>Tema y textos</th><th>Semilla</th></tr>
+      <tr>
+        <td class="dia">1 · 17/8</td>
+        <td><strong>Antes de corregir, conecta</strong><br><span style="color:var(--marron-suave);font-size:13.5px">Proverbios 15:1 · Santiago 1:19</span></td>
+        <td><em>Primero te veo; luego te guío.</em></td>
+      </tr>
+      <tr>
+        <td class="dia">2 · 18/8</td>
+        <td><strong>Tu calma también educa</strong><br><span style="color:var(--marron-suave);font-size:13.5px">Proverbios 16:32 · Gálatas 5:22-23</span></td>
+        <td><em>No puedo enseñar dominio propio desde mi descontrol.</em></td>
+      </tr>
+      <tr>
+        <td class="dia">3 · 19/8</td>
+        <td><strong>Habla a la conducta, no etiquetes la identidad</strong><br><span style="color:var(--marron-suave);font-size:13.5px">Proverbios 18:21 · Efesios 4:29</span></td>
+        <td><em>Corrijo lo que hiciste sin definir quién eres.</em></td>
+      </tr>
+      <tr>
+        <td class="dia">4 · 20/8</td>
+        <td><strong>Límites que cuidan, no humillan</strong><br><span style="color:var(--marron-suave);font-size:13.5px">Proverbios 3:11-12 · Efesios 6:4</span></td>
+        <td><em>El límite protege la relación; no la destruye.</em></td>
+      </tr>
+      <tr>
+        <td class="dia">5 · 21/8</td>
+        <td><strong>Después del conflicto, repara</strong><br><span style="color:var(--marron-suave);font-size:13.5px">Salmo 103:13-14 · Mateo 5:23-24</span></td>
+        <td><em>Una relación reparada enseña más que una perfección fingida.</em></td>
+      </tr>
+      <tr>
+        <td class="dia">6 · 22/8</td>
+        <td><strong>Ora más de lo que intentas controlar</strong><br><span style="color:var(--marron-suave);font-size:13.5px">1 Samuel 1:27-28 · Filipenses 1:6</span></td>
+        <td><em>Acompaño con presencia y dejo espacio para la obra de Dios.</em></td>
+      </tr>
+      <tr>
+        <td class="dia">7 · 23/8</td>
+        <td><strong>Tu ejemplo predica</strong><br><span style="color:var(--marron-suave);font-size:13.5px">Deuteronomio 6:6-7 · 2 Timoteo 1:5</span></td>
+        <td><em>Lo que repetimos con amor se convierte en legado.</em></td>
+      </tr>
+    </table>
+    </div>
+  </section>
+
+  <section class="seccion">
+    <p class="rotulo">Antes de empezar · cuidado pastoral</p>
+    <p>Quiero decirte con claridad lo que esta serie <strong>no</strong> es, porque eso también es cuidarte:</p>
+    <ul class="simple">
+      <li>No prometemos que una práctica bíblica producirá automáticamente un hijo obediente o un resultado específico.</li>
+      <li>No presentamos la impulsividad, la rebeldía o la dificultad escolar como falta de fe. Si una conducta es persistente, riesgosa o interfiere de manera significativa con la vida, busca apoyo profesional además de la oración. Orar y pedir ayuda no compiten.</li>
+      <li>Distinguimos disciplina de violencia. Esta serie no promueve golpes, humillación, amenazas ni castigos degradantes.</li>
+      <li>No cargamos toda la responsabilidad espiritual sobre la madre. La crianza es relacional y comunitaria.</li>
+      <li>No convertimos la Biblia en un manual de técnicas. Leemos los textos en su contexto y presentamos las herramientas como aplicaciones prudentes, no como fórmulas divinas.</li>
+      <li>No usamos historias privadas identificables. Las experiencias que inspiran esta serie se protegen.</li>
+    </ul>
+  </section>
+
+  <section class="seccion">
+    <p class="rotulo">Sistema visual de la serie</p>
+    <p>Las ocho imágenes forman una sola colección. Estos son los criterios que las mantienen unidas:</p>
+    <div class="scroll">
+    <table class="tabla">
+      <tr><th>Componente</th><th>Criterio</th></tr>
+      <tr><td><strong>Paleta</strong></td><td>Crema cálido, verde olivo, beige, dorado suave, marrón cálido y detalles vino.</td></tr>
+      <tr><td><strong>Centro</strong></td><td>Escena cotidiana de cuidado: casa, mesa, puerta, camino, libreta, conversación, manos.</td></tr>
+      <tr><td><strong>Jesús</strong></td><td>Puede aparecer de manera delicada como modelo, o sugerirse mediante luz y presencia. Evitar estética saturada.</td></tr>
+      <tr><td><strong>Texto mínimo</strong></td><td>Día # · fecha · tema · versículo focal · A solas con Dios.</td></tr>
+      <tr><td><strong>Símbolo diario</strong></td><td>Oído · respiración · palabras · límite o camino · reparación · círculos de entrega · huellas.</td></tr>
+      <tr><td><strong>Regla</strong></td><td>La imagen muestra una herramienta de vida, nunca una familia “perfecta”.</td></tr>
+    </table>
+    </div>
+
+    <h3>Pista visual de cada día</h3>
+    <div class="scroll">
+    <table class="tabla">
+      <tr><th>Día</th><th>Escena</th></tr>
+      <tr>
+        <td class="dia">Día 1</td>
+        <td>Adulto y adolescente sentados a la misma altura; manos relajadas; luz cálida entre ambos; Biblia y libreta al fondo.</td>
+      </tr>
+      <tr>
+        <td class="dia">Día 2</td>
+        <td>Una mano adulta sobre el corazón respirando; adolescente al fondo; ondas suaves que pasan del caos a la calma.</td>
+      </tr>
+      <tr>
+        <td class="dia">Día 3</td>
+        <td>Palabras oscuras que se disuelven y se transforman en palabras de vida: capaz, amado, aprendiendo, creciendo.</td>
+      </tr>
+      <tr>
+        <td class="dia">Día 4</td>
+        <td>Un camino con barandas de luz: el límite aparece como protección y dirección, no como jaula.</td>
+      </tr>
+      <tr>
+        <td class="dia">Día 5</td>
+        <td>Dos manos que vuelven a encontrarse después de una pequeña grieta reparada con luz dorada.</td>
+      </tr>
+      <tr>
+        <td class="dia">Día 6</td>
+        <td>Dos círculos dibujados en una libreta: “me toca” y “te lo entrego”; manos abiertas sobre ellos.</td>
+      </tr>
+      <tr>
+        <td class="dia">Día 7</td>
+        <td>Una persona adulta y un menor caminando por un sendero; huellas detrás; luz formando un legado que continúa.</td>
+      </tr>
+    </table>
+    </div>
+  </section>
+
+  <section class="seccion">
+    <p class="rotulo">Cómo se arma el HTML de cada día</p>
+    <ol class="pasos">
+      <li>Imagen del día como portada, con título y fecha.</li>
+      <li>Audio de la reflexión (menos de 2 minutos).</li>
+      <li>Biblia en dos tiempos: Antiguo Testamento y texto focal del Nuevo.</li>
+      <li>Reflexión escrita de 250 a 350 palabras, en lenguaje conversacional.</li>
+      <li>Herramienta práctica en 3 a 5 pasos.</li>
+      <li>Semilla de crianza en tarjeta compartible.</li>
+      <li>Bloque “Si no eres mamá o papá”, oración breve y canción.</li>
+      <li>Cierre: “Hoy haz visible el amor de Jesús en una acción pequeña.”</li>
+    </ol>
+  </section>
+
+  <section class="seccion">
+    <p class="rotulo">Canción de apertura</p>
+    
+    <div class="video">
+      <iframe src="https://www.youtube.com/embed/pPYEA3CVrZA" title="Canción del día" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+  </section>
+
+  <div class="cierre">
+    <p>“No criamos desde el miedo a lo que nuestros hijos puedan llegar a ser. Acompañamos desde el amor, modelamos lo que creemos y confiamos en la obra que solo Dios puede hacer.”</p>
+  </div>
+
+  <div class="nav"><span class="hoy">Intro</span><span>Día 1</span><span>Día 2</span><span>Día 3</span><span>Día 4</span><span>Día 5</span><span>Día 6</span><span>Día 7</span></div>
+
+  <div class="pie">
+    <span class="nombre">A solas con Dios · Criar como Jesús</span>
+    17 al 23 de agosto de 2026<br>
+    Dra. Mariluz Serrano Ortiz<br>
+    <a href="https://www.elamorunestilodevida.com" target="_blank" rel="noopener">elamorunestilodevida.com</a>
+  </div>
+</div>
+
+<script>
+document.querySelectorAll('.pestanas').forEach(function(g){
+  g.addEventListener('click', function(e){
+    var b = e.target.closest('.pest'); if(!b) return;
+    var cont = g.parentElement, v = b.dataset.v;
+    g.querySelectorAll('.pest').forEach(function(x){x.classList.toggle('activa', x===b);});
+    cont.querySelectorAll('.panel').forEach(function(p){p.classList.toggle('activo', p.dataset.v===v);});
+  });
+});
+</script>
+</body>
+</html>
