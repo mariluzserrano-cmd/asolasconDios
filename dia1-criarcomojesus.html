@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Día 1 · Antes de corregir, conecta · A solas con Dios</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..700;1,9..144,400..600&family=Karla:ital,wght@0,400..700;1,400..600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --crema:#F8F2E4;
+  --crema-2:#F1E7D3;
+  --beige:#E4D5BC;
+  --olivo:#6B7A52;
+  --olivo-osc:#4E5B3B;
+  --dorado:#C9A344;
+  --marron:#3F3227;
+  --marron-suave:#6B5A48;
+  --vino:#7B2D3B;
+  --linea:rgba(63,50,39,.16);
+}
+*{box-sizing:border-box}
+body{
+  margin:0;padding:0;
+  background:var(--crema);
+  color:var(--marron);
+  font-family:'Karla',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+  font-size:17px;line-height:1.72;
+  -webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:720px;margin:0 auto;padding:0 22px 72px}
+img{max-width:100%;height:auto;display:block}
+
+/* ---------- Encabezado ---------- */
+.hero{padding:56px 0 30px;text-align:center;position:relative}
+.serie{
+  font-size:11.5px;letter-spacing:.34em;text-transform:uppercase;
+  color:var(--olivo);font-weight:700;margin:0 0 22px
+}
+.contador{
+  display:inline-flex;align-items:baseline;gap:7px;
+  font-family:'Fraunces',Georgia,serif;
+  color:var(--vino);margin-bottom:14px
+}
+.contador .n{font-size:46px;font-weight:600;line-height:1;font-variation-settings:'SOFT' 60}
+.contador .de{font-size:15px;letter-spacing:.16em;color:var(--marron-suave);text-transform:uppercase}
+h1{
+  font-family:'Fraunces',Georgia,serif;
+  font-weight:600;font-size:clamp(30px,6.4vw,44px);
+  line-height:1.14;margin:6px 0 16px;color:var(--marron);
+  font-variation-settings:'SOFT' 40,'WONK' 1
+}
+.fecha{
+  font-size:12.5px;letter-spacing:.22em;text-transform:uppercase;
+  color:var(--marron-suave);margin:0
+}
+.imagen-dia{
+  margin:34px 0 0;border-radius:3px;
+  border:1px solid var(--linea);
+  box-shadow:0 14px 34px rgba(63,50,39,.10)
+}
+.pie-img{
+  font-size:12.5px;color:var(--marron-suave);text-align:center;
+  margin:10px 0 0;font-style:italic
+}
+
+/* ---------- Secciones ---------- */
+.seccion{margin:46px 0 0}
+.rotulo{
+  display:flex;align-items:center;gap:12px;
+  font-size:11.5px;letter-spacing:.26em;text-transform:uppercase;
+  color:var(--olivo);font-weight:700;margin:0 0 16px
+}
+.rotulo::after{content:"";flex:1;height:1px;background:var(--linea)}
+h2{
+  font-family:'Fraunces',Georgia,serif;font-weight:600;
+  font-size:25px;line-height:1.24;margin:0 0 14px;color:var(--marron)
+}
+h3{
+  font-family:'Fraunces',Georgia,serif;font-weight:600;
+  font-size:19px;line-height:1.3;margin:26px 0 8px;color:var(--olivo-osc)
+}
+p{margin:0 0 16px}
+
+/* ---------- Audio ---------- */
+.audio{
+  background:var(--crema-2);border:1px solid var(--linea);
+  border-radius:4px;padding:22px 22px 18px;margin:34px 0 0;text-align:center
+}
+.audio .et{
+  font-size:11.5px;letter-spacing:.24em;text-transform:uppercase;
+  color:var(--olivo);font-weight:700;margin:0 0 4px
+}
+.audio .sub{font-size:14px;color:var(--marron-suave);margin:0 0 16px}
+.audio iframe{width:100%;max-width:340px;height:60px;border:0;margin:0 auto}
+.audio a{
+  display:inline-block;margin-top:10px;font-size:12.5px;
+  color:var(--marron-suave);text-decoration:none;border-bottom:1px solid var(--linea)
+}
+
+/* ---------- Biblia en dos tiempos (elemento firma) ---------- */
+.dos-tiempos{position:relative;padding-left:30px;margin-top:8px}
+.dos-tiempos::before{
+  content:"";position:absolute;left:6px;top:14px;bottom:14px;width:2px;
+  background:linear-gradient(to bottom,var(--beige),var(--dorado),var(--olivo))
+}
+.tiempo{position:relative;margin-bottom:22px}
+.tiempo:last-child{margin-bottom:0}
+.tiempo::before{
+  content:"";position:absolute;left:-30px;top:9px;
+  width:14px;height:14px;border-radius:50%;
+  background:var(--crema);border:2px solid var(--dorado)
+}
+.tiempo.nt::before{background:var(--olivo);border-color:var(--olivo)}
+.tiempo .testamento{
+  font-size:11px;letter-spacing:.22em;text-transform:uppercase;
+  color:var(--marron-suave);font-weight:700;margin:0 0 3px
+}
+.tiempo .cita{
+  font-family:'Fraunces',Georgia,serif;font-size:20px;
+  color:var(--vino);margin:0 0 8px;font-weight:600
+}
+.texto-biblico{
+  background:#fff;border:1px solid var(--linea);border-left:3px solid var(--dorado);
+  padding:16px 18px;margin:0 0 10px;border-radius:2px
+}
+.tiempo.nt .texto-biblico{border-left-color:var(--olivo)}
+.texto-biblico p{margin:0;font-family:'Fraunces',Georgia,serif;font-size:17.5px;line-height:1.62}
+.texto-biblico .fuente{
+  display:block;margin-top:10px;font-family:'Karla',sans-serif;
+  font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--marron-suave)
+}
+.enlace-ntv{
+  display:inline-block;font-size:12.5px;color:var(--olivo-osc);
+  text-decoration:none;border-bottom:1px solid var(--olivo);padding-bottom:1px
+}
+
+/* ---------- Herramienta ---------- */
+.herramienta{
+  background:var(--crema-2);border:1px solid var(--beige);
+  border-radius:4px;padding:26px 24px;margin-top:8px
+}
+.herramienta .nombre{
+  font-family:'Fraunces',Georgia,serif;font-size:21px;color:var(--olivo-osc);
+  margin:0 0 14px;font-weight:600
+}
+ol.pasos{margin:0;padding:0;list-style:none;counter-reset:p}
+ol.pasos li{
+  counter-increment:p;position:relative;padding-left:38px;margin-bottom:13px
+}
+ol.pasos li:last-child{margin-bottom:0}
+ol.pasos li::before{
+  content:counter(p);position:absolute;left:0;top:1px;
+  width:25px;height:25px;border-radius:50%;
+  background:var(--olivo);color:var(--crema);
+  font-size:12.5px;font-weight:700;
+  display:flex;align-items:center;justify-content:center
+}
+ul.simple{margin:0;padding-left:20px}
+ul.simple li{margin-bottom:9px}
+
+/* ---------- Semilla ---------- */
+.semilla{
+  margin:46px 0 0;text-align:center;padding:38px 26px;
+  background:var(--olivo-osc);color:var(--crema);border-radius:4px
+}
+.semilla svg{margin:0 auto 16px}
+.semilla .et{
+  font-size:11px;letter-spacing:.28em;text-transform:uppercase;
+  color:var(--dorado);font-weight:700;margin:0 0 14px
+}
+.semilla blockquote{
+  margin:0;font-family:'Fraunces',Georgia,serif;font-style:italic;
+  font-size:clamp(21px,4.6vw,27px);line-height:1.34;font-weight:500
+}
+.semilla .firma{
+  font-family:'Karla',sans-serif;font-style:normal;font-size:12px;
+  letter-spacing:.16em;text-transform:uppercase;color:rgba(248,242,228,.66);
+  margin:18px 0 0
+}
+
+/* ---------- Bloques suaves ---------- */
+.nota{
+  border-left:3px solid var(--beige);padding:4px 0 4px 20px;margin-top:8px
+}
+.oracion{
+  background:#fff;border:1px solid var(--linea);border-radius:4px;
+  padding:26px 24px;font-family:'Fraunces',Georgia,serif;
+  font-size:18px;line-height:1.66;color:var(--marron)
+}
+.oracion p{margin:0}
+
+/* ---------- Canción ---------- */
+.video{
+  position:relative;padding-bottom:56.25%;height:0;overflow:hidden;
+  border-radius:4px;border:1px solid var(--linea);background:#000
+}
+.video iframe{position:absolute;top:0;left:0;width:100%;height:100%;border:0}
+
+/* ---------- Tablas ---------- */
+.tabla{width:100%;border-collapse:collapse;font-size:15px;margin-top:8px}
+.tabla th,.tabla td{
+  text-align:left;padding:11px 12px;border-bottom:1px solid var(--linea);vertical-align:top
+}
+.tabla th{
+  font-size:11px;letter-spacing:.16em;text-transform:uppercase;
+  color:var(--olivo);font-weight:700;background:var(--crema-2)
+}
+.tabla td.dia{white-space:nowrap;font-weight:700;color:var(--vino)}
+.scroll{overflow-x:auto;-webkit-overflow-scrolling:touch}
+
+/* ---------- Cierre ---------- */
+.cierre{
+  margin:56px 0 0;padding:34px 26px;text-align:center;
+  border-top:1px solid var(--linea);border-bottom:1px solid var(--linea)
+}
+.cierre p{
+  font-family:'Fraunces',Georgia,serif;font-style:italic;
+  font-size:20px;line-height:1.5;margin:0;color:var(--marron)
+}
+.pie{
+  margin-top:34px;text-align:center;font-size:12.5px;
+  color:var(--marron-suave);line-height:1.9
+}
+.pie a{color:var(--olivo-osc);text-decoration:none;border-bottom:1px solid var(--linea)}
+.pie .nombre{
+  font-family:'Fraunces',Georgia,serif;font-size:16px;color:var(--marron);
+  font-style:normal;display:block;margin-bottom:4px
+}
+.nav{
+  display:flex;justify-content:center;gap:8px;flex-wrap:wrap;margin-top:26px
+}
+.nav span{
+  font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--marron-suave);border:1px solid var(--linea);
+  padding:5px 11px;border-radius:2px
+}
+.nav span.hoy{background:var(--olivo);color:var(--crema);border-color:var(--olivo)}
+
+@media (max-width:600px){
+  body{font-size:16.5px}
+  .wrap{padding:0 18px 56px}
+  .hero{padding:40px 0 22px}
+  .semilla{padding:30px 20px}
+  .herramienta{padding:22px 18px}
+}
+a:focus-visible,iframe:focus-visible{outline:2px solid var(--vino);outline-offset:3px}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="hero">
+    <p class="serie">A solas con Dios · Criar como Jesús</p>
+    <div class="contador"><span class="n">1</span><span class="de">de 7</span></div>
+    <h1>Antes de corregir, conecta</h1>
+    <p class="fecha">Lunes 17 de agosto de 2026</p>
+
+    <!-- ► IMAGEN DEL DÍA: sustituye el src por tu imagen -->
+    <img class="imagen-dia" src="imagen-dia-1.jpg" alt="Adulto y adolescente sentados a la misma altura; manos relajadas; luz cálida entre ambos; Biblia y libreta al fondo.">
+    <p class="pie-img">Día 1 · Antes de corregir, conecta</p>
+  </header>
+
+  <div class="audio">
+    <p class="et">Reflexión del día</p>
+    <p class="sub">Escucha primero · menos de 2 minutos</p>
+    <iframe src="https://vocaroo.com/embed/16ymoB4J4faO?autoplay=0" frameborder="0" allow="autoplay" title="Reflexión en audio"></iframe>
+    <br><a href="https://voca.ro/16ymoB4J4faO" target="_blank" rel="noopener">Abrir el audio en Vocaroo</a>
+  </div>
+
+  <section class="seccion">
+    <p class="rotulo">Biblia en dos tiempos</p>
+    <div class="dos-tiempos">
+
+      <div class="tiempo at">
+        <p class="testamento">Antiguo Testamento</p>
+        <p class="cita">Proverbios 15:1</p>
+        <div class="texto-biblico">
+          <!-- ► PEGAR AQUÍ EL TEXTO NTV DE Proverbios 15:1 (BibleGateway) -->
+          <p>La respuesta amable calma el enojo; la palabra dura lo enciende.</p>
+          <span class="fuente">Lee el texto completo en la Nueva Traducción Viviente</span>
+        </div>
+        <a class="enlace-ntv" href="https://www.biblegateway.com/passage/?search=Proverbios%2015%3A1&version=NTV" target="_blank" rel="noopener">Abrir Proverbios 15:1 · NTV en BibleGateway</a>
+      </div>
+
+      <div class="tiempo nt">
+        <p class="testamento">Nuevo Testamento · texto focal</p>
+        <p class="cita">Santiago 1:19</p>
+        <div class="texto-biblico">
+          <!-- ► PEGAR AQUÍ EL TEXTO NTV DE Santiago 1:19 (BibleGateway) -->
+          <p>Prontos para escuchar, lentos para hablar y lentos para enojarse.</p>
+          <span class="fuente">Lee el texto completo en la Nueva Traducción Viviente</span>
+        </div>
+        <a class="enlace-ntv" href="https://www.biblegateway.com/passage/?search=Santiago%201%3A19&version=NTV" target="_blank" rel="noopener">Abrir Santiago 1:19 · NTV en BibleGateway</a>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="seccion">
+    <p class="rotulo">Mirando a Jesús</p>
+    <p>Jesús escuchaba y miraba a la persona antes de reducirla a su conducta. En los Evangelios, la dignidad siempre llega primero que la corrección: pregunta, se acerca, se sienta a la mesa. Nadie fue transformado por Él después de sentirse descartado.</p>
+  </section>
+
+  <section class="seccion">
+    <p class="rotulo">El corazón de hoy</p>
+    <p>Cuando una conducta nos preocupa —y en la adolescencia nos preocupa más— el impulso adulto casi siempre es corregir rápido. Queremos resolver, advertir, poner orden antes de que la cosa crezca. Pero una corrección que llega antes de la conexión rara vez se escucha como cuidado: se siente como rechazo.</p>
+    <p>Conectar no significa aprobarlo todo. No es bajar el estándar ni fingir que no pasó nada. Conectar es comunicar una sola cosa antes de cualquier otra: <em>estoy contigo, incluso mientras trabajamos esto</em>. Esa frase, dicha con el cuerpo antes que con la boca, baja las defensas. Y un corazón sin defensas es un corazón que puede aprender.</p>
+    <p>Hay una diferencia enorme entre un hijo que obedece porque teme perderte y un hijo que escucha porque sabe que no te va a perder. La primera obediencia dura mientras dura el miedo. La segunda se convierte en criterio.</p>
+  </section>
+
+  <section class="seccion">
+    <p class="rotulo">Herramienta práctica</p>
+    <div class="herramienta">
+      <p class="nombre">Práctica de 90 segundos</p>
+      <ol class="pasos">
+      <li>Baja la voz antes de hablar. El volumen es lo primero que tu hijo interpreta.</li>
+      <li>Mira a los ojos sin intimidar. Si puedes, ponte a su altura.</li>
+      <li>Pregunta “¿qué pasó?” antes de “¿por qué hiciste eso?”.</li>
+      <li>Valida la emoción sin validar la conducta dañina: “entiendo que estabas molesta; el grito no se queda”.</li>
+      <li>Entonces —y solo entonces— establece el límite.</li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="semilla">
+    <svg width="34" height="34" viewBox="0 0 34 34" fill="none" aria-hidden="true">
+  <path d="M17 30V15" stroke="#C9A344" stroke-width="1.6" stroke-linecap="round"/>
+  <path d="M17 18C17 18 10 17 8 11c6-1 9 3 9 7z" fill="#C9A344" opacity=".85"/>
+  <path d="M17 15c0 0 7-1 9-7-6-1-9 3-9 7z" fill="#F8F2E4" opacity=".9"/>
+</svg>
+    <p class="et">Semilla de crianza</p>
+    <blockquote>Primero te veo; luego te guío.</blockquote>
+    <p class="firma">Día 1 · Llévala contigo hoy</p>
+  </section>
+
+  <section class="seccion">
+    <p class="rotulo">Si no eres mamá o papá</p>
+    <div class="nota"><p>Escucha a un adolescente antes de aconsejarlo. Puedes preguntarle algo tan sencillo como: “¿Quieres que te escuche o quieres ideas?”. Esa pregunta le devuelve el control y te convierte en un lugar seguro.</p></div>
+  </section>
+
+  <section class="seccion">
+    <p class="rotulo">Oración breve</p>
+    <div class="oracion"><p>Jesús, enséñame a mirar antes de juzgar, a escuchar antes de reaccionar y a corregir sin retirar mi amor. Que quien esté delante de mí sienta primero que lo veo.</p></div>
+  </section>
+
+  <section class="seccion">
+    <p class="rotulo">Canción del día</p>
+    
+    <div class="video">
+      <iframe src="https://www.youtube.com/embed/0pwd1dFwWDI" title="Canción del día" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+  </section>
+
+  <div class="cierre">
+    <p>Hoy haz visible el amor de Jesús en una acción pequeña.</p>
+  </div>
+
+  <div class="nav"><span>Intro</span><span class="hoy">Día 1</span><span>Día 2</span><span>Día 3</span><span>Día 4</span><span>Día 5</span><span>Día 6</span><span>Día 7</span></div>
+
+  <div class="pie">
+    <span class="nombre">A solas con Dios · Criar como Jesús</span>
+    17 al 23 de agosto de 2026<br>
+    Dra. Mariluz Serrano Ortiz<br>
+    <a href="https://www.elamorunestilodevida.com" target="_blank" rel="noopener">elamorunestilodevida.com</a>
+  </div>
+</div>
+</body>
+</html>
