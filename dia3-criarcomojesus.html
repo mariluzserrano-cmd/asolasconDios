@@ -276,15 +276,30 @@ ul.simple li{margin-bottom:9px}
   font-family:'Fraunces',Georgia,serif;font-size:16px;color:var(--marron);
   font-style:normal;display:block;margin-bottom:4px
 }
-.nav{
-  display:flex;justify-content:center;gap:8px;flex-wrap:wrap;margin-top:26px
+.nav{margin-top:40px;text-align:center}
+.nav-tit{
+  font-size:11px;letter-spacing:.28em;text-transform:uppercase;
+  color:var(--olivo);font-weight:700;margin:0 0 16px
 }
-.nav span{
-  font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;
+.nav-dias{display:flex;justify-content:center;gap:8px;flex-wrap:wrap}
+.nav-dias a,.nav-dias span{
+  font-family:'Karla',sans-serif;font-size:11.5px;letter-spacing:.14em;
+  text-transform:uppercase;font-weight:700;text-decoration:none;
   color:var(--marron-suave);border:1px solid var(--linea);
-  padding:5px 11px;border-radius:2px
+  padding:8px 13px;border-radius:2px;transition:background .18s,color .18s
 }
-.nav span.hoy{background:var(--olivo);color:var(--crema);border-color:var(--olivo)}
+.nav-dias a:hover{background:var(--crema-2);color:var(--olivo-osc);border-color:var(--olivo)}
+.nav-dias span.hoy{background:var(--olivo);color:var(--crema);border-color:var(--olivo)}
+.saltos{
+  display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;
+  margin-top:26px;padding-top:22px;border-top:1px solid var(--linea)
+}
+.saltos .mover{
+  font-family:'Fraunces',Georgia,serif;font-size:16px;
+  color:var(--olivo-osc);text-decoration:none
+}
+.saltos .mover:only-child{margin-left:auto}
+.saltos .mover:hover{color:var(--vino)}
 
 @media (max-width:600px){
   body{font-size:16.5px}
@@ -436,7 +451,11 @@ a:focus-visible,iframe:focus-visible{outline:2px solid var(--vino);outline-offse
     <p>Hoy haz visible el amor de Jesús en una acción pequeña.</p>
   </div>
 
-  <div class="nav"><span>Intro</span><span>Día 1</span><span>Día 2</span><span class="hoy">Día 3</span><span>Día 4</span><span>Día 5</span><span>Día 6</span><span>Día 7</span></div>
+  <nav class="nav" aria-label="Los siete días de la serie">
+    <p class="nav-tit">Toda la serie</p>
+    <div class="nav-dias"><a href="https://mariluzserrano-cmd.github.io/asolasconDios/introduccion.html">Intro</a><a href="https://mariluzserrano-cmd.github.io/asolasconDios/dia1-criarcomojesus.html">Día 1</a><a href="https://mariluzserrano-cmd.github.io/asolasconDios/dia2-criarcomojesus.html">Día 2</a><span class="hoy" aria-current="page">Día 3</span><a href="https://mariluzserrano-cmd.github.io/asolasconDios/dia4-criarcomojesus.html">Día 4</a><a href="https://mariluzserrano-cmd.github.io/asolasconDios/dia5-criarcomojesus.html">Día 5</a><a href="https://mariluzserrano-cmd.github.io/asolasconDios/dia6-criarcomojesus.html">Día 6</a><a href="https://mariluzserrano-cmd.github.io/asolasconDios/dia7-criarcomojesus.html">Día 7</a></div>
+    <div class="saltos"><a class="mover" href="https://mariluzserrano-cmd.github.io/asolasconDios/dia2-criarcomojesus.html">← Día anterior</a><a class="mover" href="https://mariluzserrano-cmd.github.io/asolasconDios/dia4-criarcomojesus.html">Siguiente día →</a></div>
+  </nav>
 
   <div class="pie">
     <span class="nombre">A solas con Dios · Criar como Jesús</span>
